@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 World Clock</h1>
+        </div>
+        
+        <div class="time-display" id="timeDisplay">
+            <div class="time" id="currentTime">--:--:--</div>
+            <div class="location" id="currentLocation">Select a timezone</div>
+            <div class="date" id="currentDate">--- --, ----</div>
+        </div>
+        
+        <div class="controls">
+            <div class="timezone-selector">
+                <label for="timezoneSelect">Choose Timezone:</label>
+                <select id="timezoneSelect">
+                    <option value="">Select timezone...</option>
+                    <optgroup label="Popular">
+                        <option value="America/New_York">New York (EST/EDT)</option>
+                        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                        <option value="America/Chicago">Chicago (CST/CDT)</option>
+                        <option value="Europe/London">London (GMT/BST)</option>
+                        <option value="Europe/Paris">Paris (CET/CEST)</option>
+                        <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+                        <option value="Asia/Tokyo">Tokyo (JST)</option>
+                        <option value="Asia/Shanghai">Shanghai (CST)</option>
+                        <option value="Asia/Dubai">Dubai (GST)</option>
+                        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+                    </optgroup>
+                    <optgroup label="Americas">
+                        <option value="America/Toronto">Toronto</option>
+                        <option value="America/Vancouver">Vancouver</option>
+                        <option value="America/Mexico_City">Mexico City</option>
+                        <option value="America/Sao_Paulo">São Paulo</option>
+                        <option value="America/Buenos_Aires">Buenos Aires</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="Europe/Amsterdam">Amsterdam</option>
+                        <option value="Europe/Rome">Rome</option>
+                        <option value="Europe/Madrid">Madrid</option>
+                        <option value="Europe/Stockholm">Stockholm</option>
+                        <option value="Europe/Moscow">Moscow</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="Asia/Singapore">Singapore</option>
+                        <option value="Asia/Hong_Kong">Hong Kong</option>
+                        <option value="Asia/Mumbai">Mumbai</option>
+                        <option value="Asia/Bangkok">Bangkok</option>
+                        <option value="Asia/Seoul">Seoul</option>
+                    </optgroup>
+                    <optgroup label="Africa & Others">
+                        <option value="Africa/Cairo">Cairo</option>
+                        <option value="Africa/Lagos">Lagos</option>
+                        <option value="Pacific/Auckland">Auckland</option>
+                        <option value="Pacific/Honolulu">Honolulu</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div class="button-group">
+                <button id="saveButton" class="btn btn-primary">Save Location</button>
+                <button id="clearButton" class="btn btn-secondary">Clear</button>
+            </div>
+        </div>
+        
+        <div class="saved-locations" id="savedLocations">
+            <h3>Saved Locations</h3>
+            <div id="locationsList"></div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

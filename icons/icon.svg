@@ -1,0 +1,49 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#667eea" stroke="#764ba2" stroke-width="4"/>
+  
+  <!-- Clock face -->
+  <circle cx="64" cy="64" r="45" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Hour markers -->
+  <g stroke="#333" stroke-width="2">
+    <!-- 12 o'clock -->
+    <line x1="64" y1="24" x2="64" y2="32" stroke-width="3"/>
+    <!-- 3 o'clock -->
+    <line x1="104" y1="64" x2="96" y2="64" stroke-width="3"/>
+    <!-- 6 o'clock -->
+    <line x1="64" y1="104" x2="64" y2="96" stroke-width="3"/>
+    <!-- 9 o'clock -->
+    <line x1="24" y1="64" x2="32" y2="64" stroke-width="3"/>
+    
+    <!-- Other hour markers -->
+    <line x1="86.4" y1="29.6" x2="82.8" y2="33.2"/>
+    <line x1="98.4" y1="41.6" x2="94.8" y2="45.2"/>
+    <line x1="98.4" y1="86.4" x2="94.8" y2="82.8"/>
+    <line x1="86.4" y1="98.4" x2="82.8" y2="94.8"/>
+    <line x1="41.6" y1="98.4" x2="45.2" y2="94.8"/>
+    <line x1="29.6" y1="86.4" x2="33.2" y2="82.8"/>
+    <line x1="29.6" y1="41.6" x2="33.2" y2="45.2"/>
+    <line x1="41.6" y1="29.6" x2="45.2" y2="33.2"/>
+  </g>
+  
+  <!-- Clock hands -->
+  <!-- Hour hand -->
+  <line x1="64" y1="64" x2="64" y2="45" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="64" y1="64" x2="78" y2="36" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+  <!-- Second hand -->
+  <line x1="64" y1="64" x2="84" y2="44" stroke="#e74c3c" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="64" cy="64" r="3" fill="#2c3e50"/>
+  
+  <!-- Globe symbol in bottom right -->
+  <g transform="translate(85, 85)" opacity="0.7">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#764ba2" stroke-width="2"/>
+    <path d="M-12,0 Q0,-6 12,0" fill="none" stroke="#764ba2" stroke-width="1.5"/>
+    <path d="M-12,0 Q0,6 12,0" fill="none" stroke="#764ba2" stroke-width="1.5"/>
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#764ba2" stroke-width="1.5"/>
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="#764ba2" stroke-width="1.5"/>
+  </g>
+</svg>
